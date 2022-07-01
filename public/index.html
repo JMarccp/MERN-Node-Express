@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Note Taking App</title>
+    </head>
+    <body>
+        <h2>RESTful API</h2>
+        
+        <form id="user_form_post">
+            <field>
+                <label><u>Create Note</u></label><br /><br />
+                <label>Title:</label>
+                <input id="noteInput" type="text" name="noteTitle" placeholder="note title" />
+                <label>Body:</label>
+                <input id="bodyInput" type="text" name="noteBody" placeholder="note body" />
+                <button id="postButton" name="postButton" method="POST" >Create</button><br />
+            </field>
+        </form>
+        
+        <form id="user_form_put">
+            <field>
+                <label><u>Edit Note</u></label><br /><br />
+                <label>Title:</label>
+                <input id="updateTitle" type="text" name="updateTitle" placeholder="update title" />
+                <label>Body:</label>
+                <input id="updateBody" type="text" name="updateBody" placeholder="update body" />
+                <label>Id:</label>
+                <input id="noteIdUp" type="text" name="noteIdUp" placeholder="note id" />
+                <button id="AddButton" name="AddButton" method="PUT">Edit</button><br />
+            </field>
+        </form>
+
+        <form id="user_form_delete">
+            <field>
+                <label><u>Delete Note</u></label><br /><br />
+                <label>Id: </label>
+                <input id="noteIdDel" type="text" name="noteIdDel" placeholder="note id" />
+                <button>Delete</button>
+            </field>
+        </form>
+
+        <form id="user_form">
+            <field>
+                <label><u>Search Note</u></label><br /><br />
+                <label>Id: </label>
+                <input id="noteIdS" type="text" name="noteIdS" placeholder="note Id" />
+                <button id="getButton" name="getButton" value="submit" type="submit">Search</button><br />
+            </field>
+        </form>
+
+        <h2>Notes:</h2>
+        <div id="results">
+
+        </div>
+        <script src="./api.js"></script>
+    </body>
+</html>

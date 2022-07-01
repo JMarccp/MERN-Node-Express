@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    padding: .5em;
+}
+
+h2 {
+    text-align: center;
+}
+
+#user_form_delete, #user_form_put, #user_form_post, #user_form, #results {
+    border-style: groove;
+    border-radius: .5em;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
